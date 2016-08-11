@@ -38,7 +38,7 @@
         "drupal/devel": "~8",
         "drupal/token": "~8",
         "drupal/pathauto": "~8",
-        "drupal/restui": "8.1.x-dev",
+        "drupal/restui": "8.1.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
