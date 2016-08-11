@@ -1,11 +1,11 @@
-# Composer template for Drupal 8 projects
+# Composer template for Drupal 8 migration projects
 
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 After that you can create the project:
 
 ```
-composer create-project akempler/composerd8 some-dir --stability dev --no-interaction
+composer create-project akempler/composerd8:dev-migrate some-dir --stability dev --no-interaction
 ```
 
 With `composer require ...` you can download new dependencies to your
@@ -17,6 +17,27 @@ composer require drupal/devel:8.*
 ```
 
 ## What does the template do?
+
+It includes a variety of migration tools for drupal8.
+* [migrate_plus](https://www.drupal.org/project/migrate_plus)
+* [migrate_tools](https://www.drupal.org/project/migrate_tools)
+* [migrate_upgrade](https://www.drupal.org/project/migrate_upgrade)
+* [migrate_ui](https://www.drupal.org/project/migrate_ui)
+* [migrate_source_csv](https://www.drupal.org/project/migrate_source_csv)
+
+Additionally it adds some useful modules/themes such as:
+* [adminimal_theme](https://www.drupal.org/project/adminimal_theme)
+* [admin_toolbar](https://www.drupal.org/project/admin_toolbar)
+* [media_entity](https://www.drupal.org/project/media_entity)
+* [media_entity_image](https://www.drupal.org/project/media_entity_image)
+* [config_devel](https://www.drupal.org/project/config_devel)
+* [features](https://www.drupal.org/project/features)
+* [entity_browser](https://www.drupal.org/project/entity_browser)
+* [rules](https://www.drupal.org/project/rules)
+* [devel](https://www.drupal.org/project/devel)
+* [token](https://www.drupal.org/project/token)
+* [pathauto](https://www.drupal.org/project/pathauto)
+* [restui](https://www.drupal.org/project/restui)
 
 When installing the given `composer.json` some tasks are taken care of:
 
