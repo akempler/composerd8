@@ -5,25 +5,24 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 After that you can create the project:
 
 ```
-composer create-project akempler/composerd8:dev-migrate some-dir --stability dev --no-interaction
+composer create-project akempler/composerd8:dev-playground some-dir --stability dev --no-interaction
 ```
+
+After it finishes you can cd into the docker directory and run docker-compose up --build.  
+Currently there is no ssh setup so just use docker exec to enter the containers. 
+You can run drush from the sandbox container.
 
 With `composer require ...` you can download new dependencies to your
 installation.
 
 ```
 cd some-dir
-composer require drupal/devel:8.*
+composer require drupal/panels:8.*
 ```
 
 ## What does the template do?
 
-It includes a variety of migration tools for drupal8.
-* [migrate_plus](https://www.drupal.org/project/migrate_plus)
-* [migrate_tools](https://www.drupal.org/project/migrate_tools)
-* [migrate_upgrade](https://www.drupal.org/project/migrate_upgrade)
-* [migrate_ui](https://www.drupal.org/project/migrate_ui)
-* [migrate_source_csv](https://www.drupal.org/project/migrate_source_csv)
+Provides a basic docker environment.  
 
 Additionally it adds some useful modules/themes such as:
 * [adminimal_theme](https://www.drupal.org/project/adminimal_theme)
