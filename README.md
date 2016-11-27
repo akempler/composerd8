@@ -8,9 +8,13 @@ After that you can create the project:
 composer create-project akempler/composerd8:dev-playground some-dir --stability dev --no-interaction
 ```
 
-After it finishes you can cd into the docker directory and run docker-compose up --build.  
+After it finishes you can cd into the docker directory and run:  
+```
+docker-compose up --build.
+```
+
 Currently there is no ssh setup so just use docker exec to enter the containers. 
-You can run drush from the sandbox container.
+You can run drush from the sandbox container against the drupal and mysql containers.
 
 With `composer require ...` you can download new dependencies to your
 installation.
