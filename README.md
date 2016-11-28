@@ -18,12 +18,7 @@ composer require drupal/devel:8.*
 
 ## What does the template do?
 
-It includes a variety of migration tools for drupal8.
-* [migrate_plus](https://www.drupal.org/project/migrate_plus)
-* [migrate_tools](https://www.drupal.org/project/migrate_tools)
-* [migrate_upgrade](https://www.drupal.org/project/migrate_upgrade)
-* [migrate_ui](https://www.drupal.org/project/migrate_ui)
-* [migrate_source_csv](https://www.drupal.org/project/migrate_source_csv)
+Provides some basic organization and setup for a drupal 8 installation.
 
 Additionally it adds some useful modules/themes such as:
 * [adminimal_theme](https://www.drupal.org/project/adminimal_theme)
