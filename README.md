@@ -1,19 +1,24 @@
-# Composer template for Drupal 8 migration projects
+# Composer template for Drupal 8 projects
+
+A basic Drupal 8 installation. For a version containing docker as well, see the migrate branch.
 
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 After that you can create the project:
 
 ```
-composer create-project akempler/composerd8:dev-migrate some-dir --stability dev --no-interaction
+composer create-project akempler/composerd8:dev-playground project-dir --stability dev --no-interaction
 ```
+
+Currently there is no ssh setup so just use docker exec to enter the containers. 
+You can run drush from the sandbox container against the drupal and mysql containers.
 
 With `composer require ...` you can download new dependencies to your
 installation.
 
 ```
-cd some-dir
-composer require drupal/devel:8.*
+cd project-dir
+composer require drupal/panels:8.*
 ```
 
 ## What does the template do?
@@ -44,5 +49,10 @@ When installing the given `composer.json` some tasks are taken care of:
 * Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
 * Creates default writable versions of `settings.php` and `services.yml`.
 * Creates `sites/default/files`-directory.
-* Latest version of drush is installed locally for use at `vendor/bin/drush`.
-* Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
+
+The following items are excluded from composer.json as they are often installed in a separate Docker container. 
+However you can always add them using composer require or add them to composer.json:
+* "drush/drush" : "~8.1",
+* * Latest version of drush is installed locally for use at `vendor/bin/drush`.
+* "drupal/console" : "~1.0",
+* * Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
