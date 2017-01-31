@@ -9,7 +9,7 @@
 	],
 	"repositories" : [{
 			"type" : "composer",
-			"url" : "https://packagist.drupal-composer.org"
+			"url" : "https://packages.drupal.org/8"
 		}
 	],
 	"require" : {
@@ -61,19 +61,19 @@
 	},
 	"extra" : {
 		"installer-paths" : {
-			"web/core" : [
+			"drupal/core" : [
 				"type:drupal-core"
 			],
-			"web/libraries/{$name}" : [
+			"drupal/libraries/{$name}" : [
 				"type:drupal-library"
 			],
-			"web/modules/contrib/{$name}" : [
+			"drupal/modules/contrib/{$name}" : [
 				"type:drupal-module"
 			],
-			"web/profiles/contrib/{$name}" : [
+			"drupal/profiles/contrib/{$name}" : [
 				"type:drupal-profile"
 			],
-			"web/themes/contrib/{$name}" : [
+			"drupal/themes/contrib/{$name}" : [
 				"type:drupal-theme"
 			],
 			"drush/contrib/{$name}" : [

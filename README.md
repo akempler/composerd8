@@ -1,13 +1,13 @@
 # Composer template for Drupal 8 projects
 
-A basic Drupal 8 installation. For a version containing docker as well, see the migrate branch.
+A basic Drupal 8 installation. For a version containing docker as well, see the composerdocker branch.
 
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 After that you can create the project:
 
 ```
-composer create-project akempler/composerd8:dev-playground project-dir --stability dev --no-interaction
+composer create-project akempler/composerd8:dev-pmaster project-dir --stability dev --no-interaction
 ```
 
 Currently there is no ssh setup so just use docker exec to enter the containers. 
@@ -41,12 +41,12 @@ Additionally it adds some useful modules/themes such as:
 
 When installing the given `composer.json` some tasks are taken care of:
 
-* Drupal will be installed in the `web`-directory.
+* Drupal will be installed in the `drupal`-directory.
 * Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
+  instead of the one provided by Drupal (`drupal/vendor/autoload.php`).
+* Modules (packages of type `drupal-module`) will be placed in `drupal/modules/contrib/`
+* Theme (packages of type `drupal-theme`) will be placed in `drupal/themes/contrib/`
+* Profiles (packages of type `drupal-profile`) will be placed in `drupal/profiles/contrib/`
 * Creates default writable versions of `settings.php` and `services.yml`.
 * Creates `sites/default/files`-directory.
 

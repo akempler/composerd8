@@ -2,7 +2,7 @@
 
 set -e
 
-cat config/drupal/settings.php >> web/sites/default/settings.php \
-&& cp config/drupal/settings.local.php web/sites/default \
-&& cp config/drupal/development.services.yml web/sites \
+cat config/drupal/settings.php >> drupal/sites/default/settings.php \
+&& cp config/drupal/settings.local.php drupal/sites/default \
+&& cp config/drupal/development.services.yml drupal/sites \
 && printf "Your site is scaffolded. Run\n\t'docker-compose up --build'\nto spin up.\n"
