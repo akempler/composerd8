@@ -1,4 +1,6 @@
-<?php
+
+#-------------- Composer will prepend settings before this -------------------
+
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/drupal/sync';
 
 if (file_exists(__DIR__ . '/settings.local.php') && (getenv('ENVIRONMENT') == 'DEV')) {
