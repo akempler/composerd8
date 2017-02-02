@@ -35,7 +35,7 @@
         "drupal/ds" : "^2.6",
         "drupal/workbench_moderation" : "^1.2",
         "drupal/workbench" : "1.x-dev",
-        "drupal/migrate_plus" : "2.0-rc1",
+        "drupal/migrate_plus" : "2.0-rc1"
 	},
 	"require-dev" : {
 		"behat/mink" : "~1.7",
