@@ -1,6 +1,6 @@
 # Composer template for Drupal 8 projects
 
-A basic Drupal 8 installation. For a docker environment to run it in see: 
+A basic Drupal 8 installation. For a docker environment to run it in see:  
 https://github.com/akempler/drudock/tree/composerd8 
 
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
@@ -10,6 +10,9 @@ After that you can create the project:
 ```
 composer create-project akempler/composerd8:dev-master composer --stability dev --no-interaction
 ```
+
+If using the docker environment listed above, the command would be run from directly in the project directory.
+
 You can change "composer" to any directory name you want to use. 
 This will create a directory structure like composer/drupal. 
 Or yourprojectname/drupal.  
