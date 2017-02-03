@@ -7,7 +7,7 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 After that you can create the project:
 
 ```
-composer create-project akempler/composerd8:dev-pmaster project-dir --stability dev --no-interaction
+composer create-project akempler/composerd8:dev-master project-dir --stability dev --no-interaction
 ```
 
 Currently there is no ssh setup so just use docker exec to enter the containers. 
@@ -38,6 +38,14 @@ Additionally it adds some useful modules/themes such as:
 * [token](https://www.drupal.org/project/token)
 * [pathauto](https://www.drupal.org/project/pathauto)
 * [restui](https://www.drupal.org/project/restui)
+* [panels](https://www.drupal.org/project/restui)
+* [page_manager](https://www.drupal.org/project/restui)
+* [panelizer](https://www.drupal.org/project/restui)
+* [paragraphs](https://www.drupal.org/project/restui)
+* [entity](https://www.drupal.org/project/restui)
+* [ds](https://www.drupal.org/project/restui)
+* [workbench_moderation](https://www.drupal.org/project/restui)
+* [workbench](https://www.drupal.org/project/restui)
 
 When installing the given `composer.json` some tasks are taken care of:
 
