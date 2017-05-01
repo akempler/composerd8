@@ -1,6 +1,6 @@
 # Composer template for Drupal 8 projects
 
-A basic Drupal 8 installation. For a version containing docker as well, see the migrate branch.
+A basic Drupal 8 installation with some additional common contrib modules.
 
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
@@ -9,9 +9,6 @@ After that you can create the project:
 ```
 composer create-project akempler/composerd8:dev-playground project-dir --stability dev --no-interaction
 ```
-
-Currently there is no ssh setup so just use docker exec to enter the containers. 
-You can run drush from the sandbox container against the drupal and mysql containers.
 
 With `composer require ...` you can download new dependencies to your
 installation.
@@ -23,21 +20,28 @@ composer require drupal/panels:8.*
 
 ## What does the template do?
 
-Provides a basic docker environment.  
+Provides a basic docker environment with some commonly used contrib modules such as:
 
 Additionally it adds some useful modules/themes such as:
-* [adminimal_theme](https://www.drupal.org/project/adminimal_theme)
+* [page_manager](https://www.drupal.org/project/page_manager)
+* [panels](https://www.drupal.org/project/panels)
+* [panelizer](https://www.drupal.org/project/panelizer)
+* [paragraphs](https://www.drupal.org/project/paragraphs)
+* [field_group](https://www.drupal.org/project/field_group)
 * [admin_toolbar](https://www.drupal.org/project/admin_toolbar)
 * [media_entity](https://www.drupal.org/project/media_entity)
 * [media_entity_image](https://www.drupal.org/project/media_entity_image)
+* [media_entity_document](https://www.drupal.org/project/media_entity_document)
 * [config_devel](https://www.drupal.org/project/config_devel)
-* [features](https://www.drupal.org/project/features)
 * [entity_browser](https://www.drupal.org/project/entity_browser)
-* [rules](https://www.drupal.org/project/rules)
+* [embed](https://www.drupal.org/project/embed)
+* [entity_embed](https://www.drupal.org/project/entity_embed)
+* [dropzone](https://www.drupal.org/project/dropzone)
 * [devel](https://www.drupal.org/project/devel)
 * [token](https://www.drupal.org/project/token)
 * [pathauto](https://www.drupal.org/project/pathauto)
 * [restui](https://www.drupal.org/project/restui)
+* [display_suite](https://www.drupal.org/project/ds)
 
 When installing the given `composer.json` some tasks are taken care of:
 
