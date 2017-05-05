@@ -763,7 +763,7 @@ $settings['file_scan_ignore_directories'] = [
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-<?php
+
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/drupal/sync';
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
