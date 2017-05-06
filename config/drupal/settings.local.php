@@ -96,5 +96,5 @@ $config['google_analytics.settings']['debug'] = TRUE;
 
 $settings['trusted_host_patterns'] = array(
   '^localhost$',
-  '^local$',
+  '^local\.drupal8\.com$',
 );

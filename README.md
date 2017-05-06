@@ -10,6 +10,11 @@ After that you can create the project:
 composer create-project akempler/composerd8:dev-playground project-dir --stability dev --no-interaction
 ```
 
+A default admin account is created with username/password of:  
+admin/password
+
+A default settings.local.php file is created with a trusted host pattern of localhost and local.drupal8.com.
+
 With `composer require ...` you can download new dependencies to your
 installation.
 
@@ -51,7 +56,7 @@ When installing the given `composer.json` some tasks are taken care of:
 * Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
 * Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
 * Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
-* Creates default writable versions of `settings.php` and `services.yml`.
+* Creates default versions of `settings.php`, `settings.local.php` and `services.yml`.
 * Creates `sites/default/files`-directory.
 
 The following items are excluded from composer.json as they are often installed in a separate Docker container. 
