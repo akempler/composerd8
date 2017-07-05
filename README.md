@@ -7,7 +7,7 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 After that you can create the project:
 
 ```
-composer create-project akempler/composerd8:dev-playground project-dir --stability dev --no-interaction
+composer create-project akempler/composerd8:dev-playground composer --stability dev --no-interaction
 ```
 
 A default admin account is created with username/password of:  
