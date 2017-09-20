@@ -106,6 +106,5 @@ $databases['default']['default'] = array(
   'password' => 'rootpassword',
   'host' => 'mysql',
   'port' => '',
-  'prefix' => '',
-  'collation' => 'utf8_general_ci'
+  'prefix' => ''
 );
