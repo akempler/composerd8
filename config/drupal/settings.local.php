@@ -98,3 +98,14 @@ $settings['trusted_host_patterns'] = array(
   '^localhost$',
   '^local\.drupal8\.com$',
 );
+
+$databases['default']['default'] = array(
+  'driver' => 'mysql',
+  'database' => 'drupal',
+  'username' => 'root',
+  'password' => 'rootpassword',
+  'host' => 'mysql',
+  'port' => '',
+  'prefix' => '',
+  'collation' => 'utf8_general_ci'
+);
