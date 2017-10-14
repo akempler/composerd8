@@ -23,6 +23,8 @@ cd project-dir
 composer require drupal/panels:8.*
 ```
 
+NOTE: this requires a local version of php 7.0 or greater.
+
 ## What does the template do?
 
 Provides a basic docker environment with some commonly used contrib modules such as:
