@@ -34,7 +34,7 @@
     "jcalderonzumba/mink-phantomjs-driver" : "~0.3.3",
     "mikey179/vfsStream" : "~1.6",
     "phpunit/phpunit" : "~7.3",
-    "symfony/css-selector" : "~4.1",
+    "symfony/css-selector" : "~3.4",
 		"guzzlehttp/guzzle" : "~6.3",
 		"hirak/prestissimo" : "~0.3"
 	},
