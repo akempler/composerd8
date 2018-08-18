@@ -31,7 +31,7 @@
 		"drupal-composer/drupal-scaffold" : "^2.5",
 		"cweagans/composer-patches" : "^1.6.5",
 		"drupal/console": "~1.8",
-		"drupal/core" : "~8.6@beta",
+		"drupal/core" : "~8.5.6",
 		"drush/drush": "^9.0.0",
 		"vlucas/phpdotenv": "^2.4",
 		"webflo/drupal-finder": "^1.1",
@@ -120,11 +120,6 @@
 						".editorconfig": "../.editorconfig",
 						".gitattributes": "../.gitattributes"
 				}
-		},
-		"patches": {
-			"drupal/page_manager": {
-				"Drupal page manager fix variant route.": "https://www.drupal.org/files/issues/2918564-14-update_variant_route_filter_service.patch"
-			}
 		}
 	}
 }
