@@ -104,7 +104,7 @@ $databases['default']['default'] = array(
   'database' => 'drupal',
   'username' => 'root',
   'password' => 'rootpassword',
-  'host' => 'mysql',
+  'host' => 'db',
   'port' => '',
   'prefix' => ''
 );
